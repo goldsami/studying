@@ -1,0 +1,11 @@
+IO.puts("start")
+
+handle_open = fn
+  {:ok, file} -> "First line: #{IO.read(file, :line)}"
+  {_, error} -> "Error: #{:file.format_error(error)}"
+end
+
+# call with a file that exists
+IO.puts(handle_open.(File.open("Rakefile")))
+# and then with one that doesn't
+IO.puts(handle_open.(File.open("nonexistent")))
