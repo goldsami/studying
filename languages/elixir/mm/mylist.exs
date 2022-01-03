@@ -29,6 +29,11 @@ defmodule MyList do
     reduce(tail, head, &check_max/2)
   end
 
+  def span(from, to) when is_number(from) and is_number(to) and from > to, do: []
+
+  def span(from, to) when is_number(from) and is_number(to) and from <= to,
+    do: [from | span(from + 1, to)]
+
   # ceasar cipher
   # ?a == 97, ?z == 122
   defp _caesar_add(ch, n) when ch in ?a..?z do
