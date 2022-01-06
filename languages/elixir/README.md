@@ -14,5 +14,5 @@ $ iex file-name
 or 
 
 ```sh
-iex> c 'file-name'
+iex> c "file-name"
 ```
