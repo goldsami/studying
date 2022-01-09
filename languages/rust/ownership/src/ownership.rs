@@ -1,4 +1,5 @@
 pub fn ownership_example() {
+  println!("OWNERSHIP EXAMPLE");
   let s = String::from("hello");
   takes_ownership(s);
   // println!("{}", s); wont work because "s" lost ownership
