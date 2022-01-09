@@ -1,6 +1,5 @@
-mod ownership_example;
-use ownership_example::ownership_example;
+mod ownership;
 
 fn main() {
-    ownership_example();
+    ownership::ownership_example();
 }
