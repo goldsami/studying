@@ -49,4 +49,17 @@ defmodule MyList do
   def caesar([head | tail], number_to_add) do
     [_caesar_add(head, number_to_add) | caesar(tail, number_to_add)]
   end
+
+  def prime_nums(to) do
+    for x <- span(2, to), is_prime(x), do: x
+  end
+
+  defp is_prime(num) when num in 2..3 do
+    true
+  end
+
+  defp is_prime(num) do
+    sqrt = :math.sqrt(num) |> trunc
+    !Enum.any?(2..sqrt, &(rem(num, &1) == 0))
+  end
 end
