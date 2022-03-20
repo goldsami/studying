@@ -1,1 +1,4 @@
 languages/rust/*/target
+.idea
+tools/gulp/node_modules/
+tools/gulp/dist/
