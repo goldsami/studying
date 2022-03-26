@@ -8,7 +8,7 @@ $ rustc file_name
 
 ## Cargo
 
-To create project with carho:
+To create project with cargo:
 
 ```sh
 $ cargo new project_name
