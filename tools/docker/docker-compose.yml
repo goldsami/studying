@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  db:
+    image: mariadb:10.5.8
+    environment:
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_DATABASE: docker-test-db
+    ports:
+      - '3308:3306'
