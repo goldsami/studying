@@ -17,3 +17,13 @@ To run docker compose use:
 ```
 docker-compose up
 ```
+
+To start container with make run:
+```
+make run
+```
+
+To start container with actual files run:
+```
+make run-dev
+```
