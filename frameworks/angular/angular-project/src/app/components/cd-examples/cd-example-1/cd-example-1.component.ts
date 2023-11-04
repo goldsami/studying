@@ -6,10 +6,10 @@ import { Component } from '@angular/core';
 // And as `time` is different in both change detection runs, it throws an error
 @Component({
   selector: 'app-cd-examples',
-  templateUrl: './cd-examples.component.html',
-  styleUrls: ['./cd-examples.component.scss']
+  templateUrl: './cd-example-1.component.html',
+  styleUrls: ['./cd-example-1.component.scss']
 })
-export class CdExamplesComponent {
+export class CdExample1Component {
   get time() {
     return Date.now();
   }
