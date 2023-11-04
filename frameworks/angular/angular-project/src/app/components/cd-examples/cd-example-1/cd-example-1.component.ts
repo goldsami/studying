@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
 // But then (if running in dev mode) it runs change detection again to ensure that values are the same.
 // And as `time` is different in both change detection runs, it throws an error
 @Component({
-  selector: 'app-cd-examples',
+  selector: 'app-cd-example-1',
   templateUrl: './cd-example-1.component.html',
   styleUrls: ['./cd-example-1.component.scss']
 })
