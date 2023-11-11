@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {CdExample2ChildComponent} from "./cd-example2-child.component";
+import { CdExample2ChildComponent } from './cd-example2-child.component';
 
 @Component({
   selector: 'app-cd-example2',
@@ -7,8 +7,8 @@ import {CdExample2ChildComponent} from "./cd-example2-child.component";
   templateUrl: './cd-example2.component.html',
   styleUrls: ['./cd-example2.component.scss'],
   imports: [
-    CdExample2ChildComponent
-  ]
+    CdExample2ChildComponent,
+  ],
 })
 export class CdExample2Component {
   name = 'parent 2 initial name';

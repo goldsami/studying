@@ -1,5 +1,5 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {CdExample2Component} from "./cd-example2.component";
+import { Component, Input, OnInit } from '@angular/core';
+import { CdExample2Component } from './cd-example2.component';
 
 
 // This calls 'ExpressionChangedAfterItHasBeenCheckedError' error as during cd angular checks parent component

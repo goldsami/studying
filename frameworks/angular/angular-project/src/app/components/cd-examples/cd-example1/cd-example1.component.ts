@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {DatePipe} from "@angular/common";
+import { DatePipe } from '@angular/common';
 
 // Button click calls ExpressionChangedAfterItHasBeenCheckedError
 // After angular runs change detection, writes sees that `textContent` has changed and updates UI
@@ -10,9 +10,9 @@ import {DatePipe} from "@angular/common";
   standalone: true,
   templateUrl: './cd-example1.component.html',
   imports: [
-    DatePipe
+    DatePipe,
   ],
-  styleUrls: ['./cd-example1.component.scss']
+  styleUrls: ['./cd-example1.component.scss'],
 })
 export class CdExample1Component {
   get time() {

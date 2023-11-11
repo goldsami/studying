@@ -1,4 +1,4 @@
-import {Component, signal} from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -6,12 +6,12 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './angular-17.component.html',
-  styleUrl: './angular-17.component.scss'
+  styleUrl: './angular-17.component.scss',
 })
 export class Angular17Component {
   condition = signal(true);
 
   toggle() {
-    this.condition.update(x => !x)
+    this.condition.update(x => !x);
   }
 }
