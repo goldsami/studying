@@ -1,0 +1,5 @@
+<div class="flex flex-col gap-3">
+  @for (item of items; track item.name) {
+    <a class="p-2" [routerLink]="[item.path]" [routerLinkActive]="['text-blue']">{{item.name}}</a>
+  }
+</div>

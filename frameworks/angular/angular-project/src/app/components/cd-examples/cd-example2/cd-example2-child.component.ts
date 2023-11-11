@@ -6,6 +6,7 @@ import {CdExample2Component} from "./cd-example2.component";
 // and saves its text value to oldValues. Then child components is
 @Component({
   selector: 'app-cd-example-2-child',
+  standalone: true,
   template: `
     Child
   `,
