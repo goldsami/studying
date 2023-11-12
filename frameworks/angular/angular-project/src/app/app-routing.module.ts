@@ -6,13 +6,14 @@ import { VersionsComponent } from './pages/versions/versions.component';
 import { ChangeDetectionComponent } from './pages/change-detection/change-detection.component';
 
 export enum PageNames {
-  home = '',
+  home = 'home',
   cd = 'change-detection',
   versions = 'versions'
 }
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  {path: '', redirectTo: PageNames.home, pathMatch: "full"},
+  { path: PageNames.home, component: HomeComponent },
   { path: PageNames.cd, component: ChangeDetectionComponent },
   { path: PageNames.versions, component: VersionsComponent },
 ];

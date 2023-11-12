@@ -1,5 +1,9 @@
-<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-2">
   @for (item of items; track item.name) {
-    <a class="p-2" [routerLink]="[item.path]" [routerLinkActive]="['text-blue']">{{item.name}}</a>
+    <a
+      class="rounded py-1 px-2 text-sky-800 hover:bg-gray-200"
+      [routerLink]="[item.path]"
+      routerLinkActive="text-white bg-sky-600 hover:bg-sky-800"
+    >{{item.name}}</a>
   }
 </div>
