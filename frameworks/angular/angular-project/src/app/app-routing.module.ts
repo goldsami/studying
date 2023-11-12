@@ -12,7 +12,7 @@ export enum PageNames {
 }
 
 const routes: Routes = [
-  {path: '', redirectTo: PageNames.home, pathMatch: "full"},
+  { path: '', redirectTo: PageNames.home, pathMatch: 'full' },
   { path: PageNames.home, component: HomeComponent },
   { path: PageNames.cd, component: ChangeDetectionComponent },
   { path: PageNames.versions, component: VersionsComponent },
