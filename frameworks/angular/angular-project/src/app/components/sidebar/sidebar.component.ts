@@ -1,11 +1,8 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from '../../app-routing.module';
+import {NavLink} from "../../utils/types";
 
-export type SidebarItem<T extends string> = {
-  name: string;
-  path: T;
-}
 
 @Component({
   selector: 'app-sidebar',
@@ -15,5 +12,5 @@ export type SidebarItem<T extends string> = {
   styleUrl: './sidebar.component.scss',
 })
 export class SidebarComponent<T extends string> {
-  @Input() items: SidebarItem<T>[] = [];
+  @Input() items: NavLink<T>[] = [];
 }

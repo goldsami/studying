@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { SidebarItem } from './components/sidebar/sidebar.component';
 import { PageNames } from './app-routing.module';
+import {NavLink} from "./utils/types";
 
-const pages: SidebarItem<PageNames>[] = [
+const pages: NavLink<PageNames>[] = [
   { name: 'Home', path: PageNames.home },
   { name: 'Change Detection', path: PageNames.cd },
   { name: 'Versions', path: PageNames.versions },

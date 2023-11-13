@@ -1,3 +1,13 @@
-<h1>Versions</h1>
+<h1 class="text-2xl font-semibold mb-6">Angular Versions</h1>
+
+<div class="flex gap-2 mb-6">
+  @for (item of versionLinks; track item.name) {
+  <a
+    class="link rounded py-1 px-2"
+    [routerLink]="[item.path]"
+    routerLinkActive="bg-amber-200 hover:bg-amber-300"
+  >{{item.name}}</a>
+  }
+</div>
 
 <router-outlet></router-outlet>
