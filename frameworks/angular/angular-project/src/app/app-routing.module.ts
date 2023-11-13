@@ -15,7 +15,7 @@ const routes: Routes = [
   { path: '', redirectTo: PageNames.home, pathMatch: 'full' },
   { path: PageNames.home, component: HomeComponent },
   { path: PageNames.cd, component: ChangeDetectionComponent },
-  { path: PageNames.versions, component: VersionsComponent },
+  { path: PageNames.versions, loadChildren: () => import('./pages/versions/versions.module').then(m => m.VersionsModule) },
 ];
 
 @NgModule({
