@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { NavLink } from './utils/types';
-import {RouterOutlet, Routes} from '@angular/router';
+import { RouterOutlet, Routes } from '@angular/router';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
-import {HomeComponent} from "./pages/home/home.component";
-import {ChangeDetectionComponent} from "./pages/change-detection/change-detection.component";
+import { HomeComponent } from './pages/home/home.component';
+import { ChangeDetectionComponent } from './pages/change-detection/change-detection.component';
 
 
 export enum PageNames {
@@ -26,11 +26,11 @@ const pages: NavLink<PageNames>[] = [
 ];
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss'],
-    standalone: true,
-    imports: [SidebarComponent, RouterOutlet],
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss'],
+  standalone: true,
+  imports: [SidebarComponent, RouterOutlet],
 })
 export class AppComponent {
   pages = pages;

@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NavLink } from '../../utils/types';
-import {RouterLink} from "@angular/router";
+import { RouterLink } from '@angular/router';
 
 
 @Component({
